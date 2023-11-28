@@ -60,7 +60,7 @@ CC-BY-NC-SA
             <size>0.95 0.825</size>
             <itemSize>0.15 0.15</itemSize>
             <staticImage>./files/logos/${system.theme}.svg</staticImage>
-            <defaultImage>./files/logos/3do.svg</defaultImage>
+            <defaultImage>./files/logos/emulators.svg</defaultImage>
             <itemScale>1</itemScale>
             <imageRelativeScale>0.75</imageRelativeScale>
             <selectorLayer>middle</selectorLayer>
