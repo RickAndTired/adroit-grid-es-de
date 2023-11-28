@@ -1,0 +1,199 @@
+<!--
+ES-DE Theme Adroit-Grid
+by Rick
+CC-BY-NC-SA
+-->
+
+<theme>
+   <!--<include>./files/system-metadata-master/${system.theme}.xml</include>-->
+   <variables>
+      <font>./files/akashi.ttf</font>
+      <white>F3EFE0</white>
+      <gray>434242</gray>
+      <black>222222</black>
+      <white2>D8D9DA</white2>
+      <gray2>61677A</gray2>
+      <black2>272829</black2>
+      <manila>fff0cf</manila>
+   </variables>
+
+   <view name="system,gamelist">
+      <image name="background">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <path>./files/background.svg</path>
+          <tile>false</tile>
+          <zIndex>1</zIndex>
+      </image>   
+<!--
+        <text name="header">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.035</pos>
+            <text>**** HEADER TEXT ****</text>
+            <fontPath>${font}</fontPath>
+            <fontSize>0.03</fontSize>
+            <lineSpacing>1</lineSpacing>
+            <color>dbdbdb</color>  
+        </text>
+-->      
+     <helpsystem name="help">
+         <origin>0.5 0</origin>
+         <pos>0.5 0.95</pos>
+         <fontSize>0.025</fontSize>
+         <textColor>${white}</textColor>
+         <iconColor>${white}</iconColor>
+         <fontPath>${font}</fontPath>
+      </helpsystem>   
+   </view>
+
+   <view name="system">
+         <text name="prompt">
+            <text>Systems</text>
+            <fontPath>${font}</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>${white}</color>
+         </text>  
+         <grid name="system_grid">
+            <origin>0.5 0.5</origin>
+            <pos>0.525 0.565</pos>
+            <size>0.95 0.825</size>
+            <itemSize>0.15 0.15</itemSize>
+            <staticImage>./files/logos/${system.theme}.svg</staticImage>
+            <defaultImage>./files/logos/3do.svg</defaultImage>
+            <itemScale>1</itemScale>
+            <imageRelativeScale>0.75</imageRelativeScale>
+            <selectorLayer>middle</selectorLayer>
+            <imageColor>${gray}</imageColor>
+            <selectorColor>${gray}</selectorColor>
+            <imageSelectedColor>${white}</imageSelectedColor>
+         </grid>
+   </view>
+   
+   <view name="gamelist">
+   
+      <text name="system-name">
+         <text>${system.fullName}</text>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.05</fontSize>
+         <color>${white}</color>
+         <metadata>systemFullname</metadata>
+      </text>
+      <grid name="gamelist-grid">
+         <!--<defaultImage>./files/logos/3do.svg</defaultImage>-->
+         <imageType>cover</imageType>
+         <origin>0.5 0.5</origin>
+         <pos>0.535 0.5375</pos>
+         <size>0.9 0.825</size>
+         <itemSize>0.1 0.167</itemSize>
+         <itemScale>1.325</itemScale>
+         <imageRelativeScale>0.95</imageRelativeScale>
+         <textColor>${gray}</textColor>
+         <textRelativeScale>0.8</textRelativeScale>
+         <fontPath>${font}</fontPath>
+         <fontSize>0.02</fontSize>
+         <lineSpacing>1.1</lineSpacing>
+         <!--<textHorizontalScrolling>true</textHorizontalScrolling>
+         <textHorizontalScrollDelay>2</textHorizontalScrollDelay>
+         <selectorColor>43424255</selectorColor>
+         <unfocusedItemDimming>0.75</unfocusedItemDimming>
+         -->
+      </grid> 
+   </view>
+
+      <aspectRatio name="16:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="16:10">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="4:3">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.0125</pos>
+            </text>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.0125</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+         </view>
+      </aspectRatio>
+      
+      
+      <aspectRatio name="21:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+         </view>
+         <view name="gamelist">
+            <text name="system-name">
+               <pos>0.07 0.015</pos>
+               <letterCase>uppercase</letterCase>
+            </text>
+         </view>
+      </aspectRatio>
+      
+      
+   <variant name="Light">
+      <view name="gamelist">
+      </view>
+   </variant>  
+   
+
+   
+   <variant name="Dark">
+      <view name="system,gamelist">
+         <image name="background">
+            <path>./files/background-dark.svg</path>
+         </image>  
+         <helpsystem name="help">
+            <textColor>${white}</textColor>
+            <iconColor>${white}</iconColor>
+            <fontPath>${font}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <color>${white}</color>
+         </text>
+      </view>
+      <view name="system">
+         <grid name="system_grid">
+            <imageColor>${white}</imageColor>
+            <selectorColor>${white}</selectorColor>
+            <imageSelectedColor>${gray}</imageSelectedColor>
+         </grid>
+      </view>
+      <view name="gamelist">
+         <grid name="gamelist-grid">
+            <textColor>${white}</textColor>
+         </grid> 
+      </view> 
+   </variant>  
+
+</theme>
