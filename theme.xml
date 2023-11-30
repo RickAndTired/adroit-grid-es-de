@@ -75,9 +75,11 @@ CC-BY-NC-SA
       <text name="system-name">
          <text>${system.fullName}</text>
          <fontPath>${font}</fontPath>
-         <fontSize>0.05</fontSize>
+         <fontSize>0.04</fontSize>
+         <pos>0.07 0.025</pos>
          <color>${white}</color>
          <metadata>systemFullname</metadata>
+         <letterCase>uppercase</letterCase>
       </text>
       <grid name="gamelist-grid">
          <imageType>cover</imageType>
@@ -174,10 +176,6 @@ CC-BY-NC-SA
             </text>
          </view>
          <view name="gamelist">
-            <text name="system-name">
-               <pos>0.07 0.015</pos>
-               <letterCase>uppercase</letterCase>
-            </text>
          </view>
       </aspectRatio>
       
@@ -189,10 +187,6 @@ CC-BY-NC-SA
             </text>
          </view>
          <view name="gamelist">
-            <text name="system-name">
-               <pos>0.07 0.015</pos>
-               <letterCase>uppercase</letterCase>
-            </text>
          </view>
       </aspectRatio>
       
@@ -204,11 +198,6 @@ CC-BY-NC-SA
             </text>
          </view>
          <view name="gamelist">
-            <text name="system-name">
-               <fontSize>0.04</fontSize>
-               <pos>0.07 0.02</pos>
-               <letterCase>uppercase</letterCase>
-            </text>
             <text name="gamename">
                <pos>0.7 0.0075</pos>
             </text>
@@ -236,10 +225,6 @@ CC-BY-NC-SA
             </text>
          </view>
          <view name="gamelist">
-            <text name="system-name">
-               <pos>0.07 0.015</pos>
-               <letterCase>uppercase</letterCase>
-            </text>
             <badges name="badges">
                <size>0.15 0.15</size>
             </badges>
