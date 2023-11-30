@@ -162,6 +162,7 @@ CC-BY-NC-SA
          <fontPath>${font}</fontPath>
          <fontSize>0.02</fontSize>
          <color>${white}</color>
+         <metadataElement>true</metadataElement>
          <text>Players:</text>
       </text>
    </view>
