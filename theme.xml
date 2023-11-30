@@ -205,8 +205,25 @@ CC-BY-NC-SA
          </view>
          <view name="gamelist">
             <text name="system-name">
-               <pos>0.07 0.0125</pos>
+               <fontSize>0.04</fontSize>
+               <pos>0.07 0.02</pos>
                <letterCase>uppercase</letterCase>
+            </text>
+            <text name="gamename">
+               <pos>0.7 0.0075</pos>
+            </text>
+            <badges name="badges">
+               <pos>0.7 0.04</pos>
+               <size>0.25 0.25</size>
+            </badges>
+            <rating name="rating">
+               <pos>0.7 0.075</pos>
+            </rating>
+            <text name="playersmetadata">
+               <pos>0.875 0.075</pos>
+            </text>
+            <text name="players">
+               <pos>0.8 0.075</pos>
             </text>
          </view>
       </aspectRatio>
