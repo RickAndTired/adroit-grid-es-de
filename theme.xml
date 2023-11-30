@@ -223,6 +223,15 @@ CC-BY-NC-SA
                <pos>0.07 0.015</pos>
                <letterCase>uppercase</letterCase>
             </text>
+            <badges name="badges">
+               <size>0.15 0.15</size>
+            </badges>
+            <text name="playersmetadata">
+               <pos>0.7475 0.075</pos>
+            </text>
+            <text name="players">
+               <pos>0.7075 0.075</pos>
+            </text>
          </view>
       </aspectRatio>
       
