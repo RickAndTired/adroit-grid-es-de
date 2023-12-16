@@ -15,5 +15,12 @@
       <label>Light</label>
       <selectable>true</selectable>
    </variant>
-  
+   <variant name="Dark-stretched">
+      <label>Dark Stretched</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="Light-stretched">
+      <label>Light Stretched</label>
+      <selectable>true</selectable>
+   </variant>
 </themeCapabilities>
