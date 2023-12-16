@@ -83,6 +83,7 @@ CC-BY-NC-SA
       </text>
       <grid name="gamelist-grid">
          <imageType>cover</imageType>
+         <imageFit>contain</imageFit> <!--Stretch cover image (fit)-->
          <origin>0.5 0.5</origin>
          <pos>0.535 0.5375</pos>
          <size>0.9 0.825</size>
@@ -281,5 +282,41 @@ CC-BY-NC-SA
          </grid> 
       </view> 
    </variant>  
-
+   
+   <variant name="Dark-stretched">
+      <view name="system,gamelist">
+         <image name="background">
+            <path>./files/background-dark.svg</path>
+         </image>  
+         <helpsystem name="help">
+            <textColor>${white}</textColor>
+            <iconColor>${white}</iconColor>
+            <fontPath>${font}</fontPath>
+         </helpsystem>
+         <text name="prompt">
+            <color>${white}</color>
+         </text>
+      </view>
+      <view name="system">
+         <grid name="system_grid">
+            <imageColor>${white}</imageColor>
+            <selectorColor>${white}</selectorColor>
+            <imageSelectedColor>${gray}</imageSelectedColor>
+         </grid>
+      </view>
+      <view name="gamelist">
+         <grid name="gamelist-grid">
+            <textColor>${white}</textColor>
+            <imageFit>fill</imageFit> <!--Stretch cover image-->
+         </grid> 
+      </view> 
+   </variant> 
+   
+   <variant name="Light-stretched">
+      <view name="gamelist">
+         <grid name="gamelist-grid">
+            <imageFit>fill</imageFit> <!--Stretch cover image-->
+         </grid> 
+      </view> 
+   </variant> 
 </theme>
