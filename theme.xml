@@ -246,7 +246,28 @@ CC-BY-NC-SA
             </text>
          </view>
       </aspectRatio>
-      
+
+   
+      <aspectRatio name="19.5:9">
+         <view name="system,gamelist">
+            <text name="prompt">
+               <pos>0.07 0.015</pos>
+            </text>
+         </view>
+         <view name="gamelist">
+            <badges name="badges">
+               <size>0.15 0.15</size>
+               <pos>0.65 0.0415</pos>
+            </badges>
+            <text name="playersmetadata">
+               <pos>0.755 0.075</pos>
+            </text>
+            <text name="players">
+               <pos>0.7125 0.075</pos>
+            </text>
+         </view>
+      </aspectRatio>
+   
       
    <variant name="Light">
       <view name="gamelist">
